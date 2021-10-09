@@ -49,10 +49,8 @@ app.use(session({
 var mongoose = require('mongoose');
 
 
-//mongodb+srv://admin:<759fDiB79D7b82Uenpm>@redes-bicicletas.6i9jj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
-// si estoy enn el ambiente de desarrollo usar
-//var mongoDB = 'mongoDB://localhost/redes_bicicletas';
-//sino usar
+//var mongoDB = 'mongodb://localhost/redes_bicicletas';
+//mongodb+srv://admin:<password>@red-bicicletas.7bdpa.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 var mongoDB = process.env.MONGO_URI;
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true});
 mongoose.Promise = global.Promise;
