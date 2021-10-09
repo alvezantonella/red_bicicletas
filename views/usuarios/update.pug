@@ -1,0 +1,31 @@
+extends ../layout 
+
+block content 
+  a(href='/usuarios') volver 
+
+  br
+  br
+  br
+
+  h1 Actualizando Usuario 
+
+  br
+  br
+
+  form(action=`/usuarios/${usuario.id}/update` method='post')
+    .form-group 
+        label(for='nombre') Nombre:
+        input#nombre.form-control(type='text' name='nombre' value= usuario.nombre class= errors.nombre)
+        if errors.nombre 
+            small#nombrehelp.text-danger 
+                = errors.nombre.message 
+
+
+    br
+    br
+    input.btn.btn-primary(type='submit' value='ok')
+    
+
+
+
+

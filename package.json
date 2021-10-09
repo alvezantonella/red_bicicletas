@@ -1,0 +1,46 @@
+{
+  "name": "redes_bicicletas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www",
+    "test": "jasmine"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-mongodb-session": "^2.4.1",
+    "cookie-parser": "^1.4.5",
+    "debug": "^4.3.1",
+    "dotenv": "^9.0.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "http-errors": "^1.8.0",
+    "install": "^0.13.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.13.9",
+    "mongoose-unique-validator": "^2.0.3",
+    "morgan": "^1.10.0",
+    "newrelic": "^7.4.0",
+    "nodemailer": "^6.6.0",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "npm": "^7.24.1",
+    "passport": "^0.4.1",
+    "passport-facebook-token": "^4.0.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "pug": "^3.0.2",
+    "request": "^2.88.2",
+    "router": "^1.3.5"
+  },
+  "devDependencies": {
+    "jasmine": "^3.7.0",
+    "nodemon": "^2.0.7"
+  }
+}
